@@ -3,7 +3,6 @@
 
 ## Semana 2 - Git y GitHub
 
-**Carrera:** Computación  
 **Asignatura:** Ingeniería Web
 
 ## Descripción
@@ -26,5 +25,5 @@ repositorio y subir nuestro proyecto a GitHub.
 ## Integrantes
 
 - Joel Domínguez Ochoa
-- Marcelo Benítez
-- Stalin Salinas
+- Marcelo Pico Benítez
+- Stalin Salinas Quinche
