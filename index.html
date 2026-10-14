@@ -1,146 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de Ingeniería Web</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #F3F7FF;
-            color: #243B53;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #102C57;
-            color: white;
-            text-align: center;
-            padding: 45px 20px;
-            border-bottom: 6px solid #FFD34D;
-        }
-
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .etiqueta {
-            background-color: #FFD34D;
-            color: #102C57;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        .contenedor {
-            max-width: 950px;
-            margin: auto;
-            padding: 25px;
-        }
-
-        h2 {
-            color: #153B78;
-            border-left: 5px solid #FFD34D;
-            padding-left: 12px;
-            margin-top: 35px;
-        }
-
-        h3 {
-            color: #153B78;
-        }
-
-        .tarjeta {
-            background-color: white;
-            padding: 22px;
-            margin-bottom: 18px;
-            border-radius: 12px;
-            border: 1px solid #DCE7FA;
-            box-shadow: 0 3px 10px #152B5010;
-        }
-
-        .columnas {
-            display: flex;
-            gap: 18px;
-        }
-
-        .columnas .tarjeta {
-            flex: 1;
-        }
-
-        .destacado {
-            background-color: #FFF5CE;
-            border-left: 5px solid #F4BF24;
-            padding: 18px;
-            border-radius: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th {
-            background-color: #153B78;
-            color: white;
-        }
-
-        th, td {
-            padding: 12px;
-            border: 1px solid #DCE7FA;
-            text-align: left;
-        }
-
-        tr:nth-child(even) {
-            background-color: #EDF4FF;
-        }
-
-        code {
-            background-color: #E7F0FF;
-            color: #153B78;
-            padding: 4px 7px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .tabla {
-            overflow-x: auto;
-        }
-
-        .integrantes {
-            background-color: #FFF5CE;
-            text-align: center;
-        }
-
-        .integrantes p {
-            background-color: white;
-            padding: 12px;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
-
-        footer {
-            background-color: #102C57;
-            color: white;
-            text-align: center;
-            padding: 22px;
-            margin-top: 25px;
-        }
-
-        @media (max-width: 600px) {
-            .columnas {
-                flex-direction: column;
-            }
-
-            header h1 {
-                font-size: 25px;
-            }
-        }
-    </style>
+    <meta name="description" content="Taller de Ingeniería Web - Semana 2: Git y GitHub. UTPL Computación.">
+    <title>Taller de Ingeniería Web | Git y GitHub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -150,211 +15,232 @@
 
         <h1>TALLER DE INGENIERÍA WEB</h1>
 
-        <h3 style="color: #FFD34D;">
-            Semana 2 - Git y GitHub
-        </h3>
+        <p class="subtitulo">Semana 2 - Git y GitHub</p>
 
         <p>Control de versiones y trabajo colaborativo</p>
     </header>
 
     <main class="contenedor">
 
-        <h2>1. ¿Qué son Git y GitHub?</h2>
+        <section>
+            <h2>1. ¿Qué son Git y GitHub?</h2>
 
-        <div class="columnas">
+            <div class="columnas">
+
+                <article class="tarjeta">
+                    <h3>Git</h3>
+
+                    <p>
+                        Git es una herramienta de control
+                        de versiones que permite registrar
+                        los cambios realizados en un proyecto.
+                    </p>
+
+                    <p>
+                        Podemos utilizar Git localmente
+                        sin necesidad de internet.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>GitHub</h3>
+
+                    <p>
+                        GitHub es una plataforma en la nube
+                        que permite almacenar repositorios
+                        de Git y compartir proyectos.
+                    </p>
+
+                    <p>
+                        Facilita el trabajo colaborativo
+                        entre varios desarrolladores.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Diferencias entre Git y GitHub</h2>
 
             <div class="tarjeta">
-                <h3>Git</h3>
 
                 <p>
-                    Git es una herramienta de control
-                    de versiones que permite registrar
-                    los cambios realizados en un proyecto.
+                    <strong>Git:</strong> registra los cambios
+                    y permite recuperar versiones anteriores.
                 </p>
 
                 <p>
-                    Podemos utilizar Git localmente
-                    sin necesidad de internet.
+                    <strong>GitHub:</strong> permite publicar
+                    los repositorios y colaborar en equipo.
                 </p>
+
+                <div class="destacado">
+                    <strong>Ejemplo práctico:</strong>
+
+                    <p>
+                        Creamos una página HTML, registramos
+                        sus cambios con Git y luego la
+                        compartimos mediante GitHub.
+                    </p>
+                </div>
+
             </div>
+        </section>
+
+        <section>
+            <h2>3. Comandos básicos de Git</h2>
+
+            <div class="tarjeta tabla">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Función</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><code>git --version</code></td>
+                            <td>Verifica la versión instalada.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git init</code></td>
+                            <td>Inicializa un repositorio local.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git status</code></td>
+                            <td>Muestra el estado de los archivos.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git add .</code></td>
+                            <td>Prepara los cambios para un commit.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git commit -m "Avance"</code></td>
+                            <td>Registra los cambios preparados.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git log</code></td>
+                            <td>Muestra el historial de commits.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git branch</code></td>
+                            <td>Muestra las ramas locales.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git remote add origin URL</code></td>
+                            <td>Conecta el repositorio local con uno remoto.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git clone URL</code></td>
+                            <td>Copia un repositorio existente.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git push</code></td>
+                            <td>Envía commits al repositorio remoto.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>git pull</code></td>
+                            <td>Obtiene e integra cambios remotos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Conceptos importantes</h2>
 
             <div class="tarjeta">
-                <h3>GitHub</h3>
 
                 <p>
-                    GitHub es una plataforma en la nube
-                    que permite almacenar repositorios
-                    de Git y compartir proyectos.
+                    <strong>Repositorio:</strong> lugar donde se
+                    almacenan los archivos de un proyecto
+                    y su historial de versiones.
                 </p>
 
                 <p>
-                    Facilita el trabajo colaborativo
-                    entre varios desarrolladores.
+                    <strong>Commit:</strong> registro de los cambios
+                    preparados en un momento determinado.
                 </p>
-            </div>
-
-        </div>
-
-        <h2>2. Diferencias entre Git y GitHub</h2>
-
-        <div class="tarjeta">
-
-            <p>
-                <b>Git:</b> registra los cambios
-                y permite recuperar versiones anteriores.
-            </p>
-
-            <p>
-                <b>GitHub:</b> permite publicar
-                los repositorios y colaborar en equipo.
-            </p>
-
-            <div class="destacado">
-                <b>Ejemplo práctico:</b>
 
                 <p>
-                    Creamos una página HTML, registramos
-                    sus cambios con Git y luego la
-                    compartimos mediante GitHub.
+                    <strong>Branch:</strong> rama que permite
+                    desarrollar cambios de forma separada.
                 </p>
+
+                <p>
+                    <strong>README.md:</strong> documento que explica
+                    el propósito y funcionamiento del proyecto.
+                </p>
+
+                <p>
+                    <strong>.gitignore:</strong> archivo que indica
+                    qué archivos no rastreados debe ignorar Git.
+                </p>
+
             </div>
+        </section>
 
-        </div>
+        <section>
+            <h2>5. ¿Cómo subir un proyecto a GitHub?</h2>
 
-        <h2>3. Comandos básicos de Git</h2>
+            <div class="tarjeta">
 
-        <div class="tarjeta tabla">
+                <ol class="pasos">
+                    <li>Crear una carpeta con nuestro proyecto.</li>
+                    <li>Inicializar Git con <code>git init</code>.</li>
+                    <li>Preparar archivos con <code>git add .</code>.</li>
+                    <li>Registrar un commit con <code>git commit</code>.</li>
+                    <li>Crear un repositorio en GitHub.</li>
+                    <li>Conectar el repositorio local con GitHub usando <code>git remote add origin URL</code>.</li>
+                    <li>Subir los cambios con <code>git push</code>.</li>
+                </ol>
 
-            <table>
-                <tr>
-                    <th>Comando</th>
-                    <th>Función</th>
-                </tr>
+                <div class="destacado">
+                    <strong>Importante:</strong>
+                    Git nos ayuda a llevar el historial
+                    del código, mientras que GitHub facilita
+                    compartirlo y trabajar en grupo.
+                </div>
 
-                <tr>
-                    <td><code>git --version</code></td>
-                    <td>Verifica la versión instalada.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git init</code></td>
-                    <td>Inicializa un repositorio local.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git status</code></td>
-                    <td>Muestra el estado de los archivos.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git add .</code></td>
-                    <td>Prepara los cambios para un commit.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git commit -m "Avance"</code></td>
-                    <td>Registra los cambios preparados.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git log</code></td>
-                    <td>Muestra el historial de commits.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git branch</code></td>
-                    <td>Muestra las ramas locales.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git clone URL</code></td>
-                    <td>Copia un repositorio existente.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git push</code></td>
-                    <td>Envía commits al repositorio remoto.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git pull</code></td>
-                    <td>Obtiene e integra cambios remotos.</td>
-                </tr>
-            </table>
-
-        </div>
-
-        <h2>4. Conceptos importantes</h2>
-
-        <div class="tarjeta">
-
-            <p>
-                <b>Repositorio:</b> lugar donde se
-                almacenan los archivos de un proyecto
-                y su historial de versiones.
-            </p>
-
-            <p>
-                <b>Commit:</b> registro de los cambios
-                preparados en un momento determinado.
-            </p>
-
-            <p>
-                <b>Branch:</b> rama que permite
-                desarrollar cambios de forma separada.
-            </p>
-
-            <p>
-                <b>README.md:</b> documento que explica
-                el propósito y funcionamiento del proyecto.
-            </p>
-
-            <p>
-                <b>.gitignore:</b> archivo que indica
-                qué archivos no rastreados debe ignorar Git.
-            </p>
-
-        </div>
-
-        <h2>5. ¿Cómo subir un proyecto a GitHub?</h2>
-
-        <div class="tarjeta">
-
-            <ol>
-                <li>Crear una carpeta con nuestro proyecto.</li>
-                <li>Inicializar Git con <code>git init</code>.</li>
-                <li>Preparar archivos con <code>git add .</code>.</li>
-                <li>Registrar un commit con <code>git commit</code>.</li>
-                <li>Crear un repositorio en GitHub.</li>
-                <li>Conectar el repositorio local con GitHub.</li>
-                <li>Subir los cambios con <code>git push</code>.</li>
-            </ol>
-
-            <div class="destacado">
-                <b>Importante:</b>
-                Git nos ayuda a llevar el historial
-                del código, mientras que GitHub facilita
-                compartirlo y trabajar en grupo.
             </div>
+        </section>
 
-        </div>
+        <section>
+            <h2>6. Integrantes del grupo</h2>
 
-        <h2>6. Integrantes del grupo</h2>
+            <div class="tarjeta integrantes">
 
-        <div class="tarjeta integrantes">
+                <h3>Equipo de trabajo</h3>
 
-            <h3>Equipo de trabajo</h3>
+                <ul>
+                    <li>Joel Domínguez Ochoa</li>
+                    <li>Marcelo Benítez</li>
+                    <li>Stalin Salinas</li>
+                </ul>
 
-            <p>Joel Domínguez Ochoa</p>
-            <p>Marcelo Benítez</p>
-            <p>Stalin Salinas</p>
-
-        </div>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <p><b>Universidad Técnica Particular de Loja</b></p>
+        <p><strong>Universidad Técnica Particular de Loja</strong></p>
         <p>Ingeniería Web | Semana 2</p>
         <p>Octubre 2026 - Febrero 2027</p>
     </footer>
