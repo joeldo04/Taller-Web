@@ -1,8 +1,6 @@
 # Taller de Ingeniería Web – Semana 2
-
-**Universidad Técnica Particular de Loja (UTPL)**  
-**Carrera:** Computación  
-**Período académico:** Octubre 2026 – Febrero 2027
+**Asignatura:** Ingeniería Web   
+**Taller:** Estructura inicial del proyecto y comandos básicos de Git y GitHub
 
 ## Descripción
 
@@ -38,7 +36,7 @@ mi-proyecto-web/
 ## Tecnologías y herramientas
 
 - **HTML5:** organiza el contenido de la página.
-- **CSS3:** establece el diseño y los colores azul, amarillo y blanco.
+- **CSS:** establece el diseño y los colores azul, amarillo y blanco.
 - **JavaScript:** permite mostrar u ocultar un consejo en la página.
 - **Visual Studio Code:** editor de código.
 - **Git:** control de versiones.
@@ -65,24 +63,8 @@ No se necesitan instalaciones adicionales, frameworks ni base de datos.
 | `git push -u origin web-completo` | Publicar la rama en GitHub. |
 | `git pull origin main` | Obtener e integrar cambios de `main` en la rama actual; revisar antes de usar. |
 
-### Cómo subir el proyecto a una rama del repositorio grupal
-
-Si ya clonaste el repositorio del grupo y creaste la rama `web-completo`:
-
-```bash
-git status
-git add index.html css/estilos.css js/app.js README.md .gitignore
-git commit -m "Agregar pagina del taller Git y GitHub"
-git push -u origin web-completo
-```
-
-> **Importante:** los archivos de este paquete se deben colocar **en la raíz del repositorio que ya clonaste**, sin agregar otra carpeta adicional. Si ya existe alguno de estos archivos, revisa antes de reemplazarlo para no perder trabajo de tus compañeros. **No vuelvas a ejecutar `git init`** dentro de un repositorio que ya clonaste.
-
 ## Integrantes
 
 - Joel Domínguez Ochoa
-- Marcelo Benítez
-- Stalin Salinas
-
-**Asignatura:** Ingeniería Web  
-**Taller:** Estructura inicial del proyecto y comandos básicos de Git y GitHub
+- Marcelo Pico Benítez
+- Stalin Salinas Quinche
