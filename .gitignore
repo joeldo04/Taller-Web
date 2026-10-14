@@ -1,0 +1,13 @@
+# Archivos de Windows y macOS
+Thumbs.db
+.DS_Store
+
+# Configuración local del editor
+.vscode/
+
+# Archivos temporales o de registros
+*.log
+*.tmp
+
+# Dependencias futuras (no se usan en este taller)
+node_modules/
