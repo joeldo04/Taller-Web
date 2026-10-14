@@ -26,5 +26,5 @@ repositorio y subir nuestro proyecto a GitHub.
 ## Integrantes
 
 - Joel Domínguez Ochoa
-- Marcelo Benítez
+- Marcelo Pico Benítez
 - Stalin Salinas
