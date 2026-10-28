@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="RUNCTY, planificación de rutas seguras para corredores en Loja, Ecuador.">
+ <title>Requisitos no funcionales | RUNCTY</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Montserrat:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="envoltura barra">
+      <a class="marca" href="index.html" aria-label="RUNCTY, ir al inicio"><span class="marca-imagen"><img src="img/logo_runcty.png" alt="" width="48" height="48"></span><span>RUNCTY<span class="marca-punto">.</span></span></a>
+      <nav class="navegacion" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="proyecto.html">Proyecto</a><a href="requisitos.html" aria-current="page">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a class="nav-figma" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Ver prototipo <span aria-hidden="true">↗</span></a></nav>
+      <details class="navegacion-movil"><summary>Menú <span aria-hidden="true">☰</span></summary><nav aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="proyecto.html">Proyecto</a><a href="requisitos.html" aria-current="page">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></nav></details>
+    </div>
+  </header>
+<main><section class="cabecera-pagina cabecera-oscura"><div class="envoltura"><p class="eyebrow">ESPECIFICACIÓN · RNF</p><h1>Requisitos no funcionales</h1><p class="cabecera-subtitulo">12 condiciones de calidad, seguridad, rendimiento y compatibilidad.</p></div></section><section class="seccion"><div class="envoltura"><div class="accesos-req"><a href="requisitos.html">Consultar documento completo ↗</a><a href="requisitos-funcionales.html">Ver funcionales ↗</a></div><article class="texto-documento texto-requisitos"><h2 id="requisitos-no-funcionales">Requisitos no funcionales</h2>
+<p>Los requisitos no funcionales establecen condiciones medibles sobre
+seguridad, privacidad, accesibilidad, rendimiento, compatibilidad,
+disponibilidad y fiabilidad. No se presentan como nuevas funciones de
+usuario.</p>
+<div class="tabla-desplazable"><table border="1" cellpadding="6" cellspacing="0" class="tabla-requisitos" width="100%">
+<thead>
+<tr>
+<th>Código</th>
+<th>Condición</th>
+<th>Criterio de comprobación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF01</td>
+<td>Seguridad de contraseñas. El sistema deberá almacenar las
+contraseñas con una función de hash adaptativa y una sal única por
+cuenta.</td>
+<td>Una inspección de la base de datos confirma que no hay contraseñas
+en texto plano.</td>
+</tr>
+<tr>
+<td>RNF02</td>
+<td>Comunicaciones seguras. El sistema deberá proteger las
+comunicaciones entre la web, la aplicación Android y el servidor
+mediante TLS 1.2 o superior.</td>
+<td>Las conexiones HTTP se redirigen a HTTPS y la negociación TLS no
+acepta versiones inferiores a 1.2.</td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>Control de acceso. El servidor deberá rechazar las operaciones de
+los usuarios cuyo rol no tenga autorización para realizarlas.</td>
+<td>Las pruebas de acceso con roles no autorizados reciben una respuesta
+de denegación.</td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>Privacidad de la ubicación. El sistema deberá mantener privados por
+defecto los recorridos y la ubicación del corredor fuera de los enlaces
+temporales autorizados.</td>
+<td>Un usuario diferente no puede consultar ubicaciones ni
+entrenamientos sin autorización vigente.</td>
+</tr>
+<tr>
+<td>RNF05</td>
+<td>Facilidad de aprendizaje. La aplicación web deberá permitir que un
+corredor que inicia sesión por primera vez planifique una ruta en tres
+minutos o menos sin ayuda.</td>
+<td>En una prueba con usuarios nuevos, los participantes completan la
+tarea sin asistencia dentro de tres minutos.</td>
+</tr>
+<tr>
+<td>RNF06</td>
+<td>Accesibilidad web. La aplicación web deberá cumplir las pautas WCAG
+2.1 de nivel AA en las pantallas incluidas en el prototipo.</td>
+<td>La revisión de accesibilidad y las pruebas de teclado no detectan
+incumplimientos del nivel AA en las pantallas evaluadas.</td>
+</tr>
+<tr>
+<td>RNF07</td>
+<td>Rendimiento de las rutas. El servidor deberá responder las consultas
+de recomendación y cálculo de rutas en cinco segundos o menos para al
+menos el 95 % de las solicitudes con 50 usuarios concurrentes.</td>
+<td>Una prueba de carga documenta por separado el tiempo de respuesta de
+ambas operaciones.</td>
+</tr>
+<tr>
+<td>RNF08</td>
+<td>Compatibilidad web. La aplicación web deberá funcionar en las dos
+últimas versiones de Chrome, Firefox, Edge y Safari, en anchos de
+pantalla de 360 a 1920 píxeles.</td>
+<td>Se ejecuta la misma prueba de navegación y planificación en los
+navegadores y tamaños indicados.</td>
+</tr>
+<tr>
+<td>RNF09</td>
+<td>Compatibilidad Android. La aplicación móvil deberá poder instalarse
+y ejecutarse en dispositivos con Android 10 o superior.</td>
+<td>Se instala el APK y se comprueba el inicio y la grabación en un
+dispositivo Android compatible.</td>
+</tr>
+<tr>
+<td>RNF10</td>
+<td>Disponibilidad del prototipo. La aplicación web y su API deberán
+mantenerse accesibles al menos el 95 % del tiempo durante la prueba
+piloto, excluyendo mantenimientos comunicados con al menos 24 horas de
+anticipación.</td>
+<td>Un registro de disponibilidad del período piloto permite calcular el
+porcentaje de tiempo accesible.</td>
+</tr>
+<tr>
+<td>RNF11</td>
+<td>Conservación del recorrido. La aplicación Android deberá conservar
+localmente los puntos GPS ya capturados cuando se interrumpa la conexión
+a internet.</td>
+<td>Se registra un entrenamiento sin red, se restablece la conexión y se
+comprueba que los puntos guardados sigan disponibles.</td>
+</tr>
+<tr>
+<td>RNF12</td>
+<td>Advertencia del índice. El sistema deberá identificar siempre el
+índice de seguridad como referencial y señalar cuando un tramo no tenga
+información suficiente para evaluarlo.</td>
+<td>Ninguna consulta muestra una garantía de seguridad y un tramo sin
+datos presenta una advertencia visible.</td>
+</tr>
+</tbody>
+</table></div>
+</article><div class="volver"><a class="btn btn-borde" href="requisitos.html">Volver a la documentación <span aria-hidden="true">↗</span></a></div></div></section></main>
+<footer class="pie"><div class="envoltura pie-grid"><div><a class="marca marca-pie" href="index.html"><span class="marca-imagen"><img src="img/logo_runcty.png" width="48" height="48" alt=""></span><span>RUNCTY<span class="marca-punto">.</span></span></a><p>Tu ciudad. Tu ritmo. Tu siguiente meta.</p></div><div class="pie-links"><a href="proyecto.html">El proyecto</a><a href="requisitos-funcionales.html">Requisitos funcionales</a><a href="requisitos-no-funcionales.html">Requisitos no funcionales</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></div></div><div class="envoltura pie-final"><span>Proyecto académico · Ingeniería Web · Computación</span><span>Loja, Ecuador · 2026</span></div></footer>
+</body>
+</html>

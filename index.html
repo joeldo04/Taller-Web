@@ -1,361 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de Ingeniería Web</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #F3F7FF;
-            color: #243B53;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #102C57;
-            color: white;
-            text-align: center;
-            padding: 45px 20px;
-            border-bottom: 6px solid #FFD34D;
-        }
-
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .etiqueta {
-            background-color: #FFD34D;
-            color: #102C57;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        .contenedor {
-            max-width: 950px;
-            margin: auto;
-            padding: 25px;
-        }
-
-        h2 {
-            color: #153B78;
-            border-left: 5px solid #FFD34D;
-            padding-left: 12px;
-            margin-top: 35px;
-        }
-
-        h3 {
-            color: #153B78;
-        }
-
-        .tarjeta {
-            background-color: white;
-            padding: 22px;
-            margin-bottom: 18px;
-            border-radius: 12px;
-            border: 1px solid #DCE7FA;
-            box-shadow: 0 3px 10px #152B5010;
-        }
-
-        .columnas {
-            display: flex;
-            gap: 18px;
-        }
-
-        .columnas .tarjeta {
-            flex: 1;
-        }
-
-        .destacado {
-            background-color: #FFF5CE;
-            border-left: 5px solid #F4BF24;
-            padding: 18px;
-            border-radius: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th {
-            background-color: #153B78;
-            color: white;
-        }
-
-        th, td {
-            padding: 12px;
-            border: 1px solid #DCE7FA;
-            text-align: left;
-        }
-
-        tr:nth-child(even) {
-            background-color: #EDF4FF;
-        }
-
-        code {
-            background-color: #E7F0FF;
-            color: #153B78;
-            padding: 4px 7px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .tabla {
-            overflow-x: auto;
-        }
-
-        .integrantes {
-            background-color: #FFF5CE;
-            text-align: center;
-        }
-
-        .integrantes p {
-            background-color: white;
-            padding: 12px;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
-
-        footer {
-            background-color: #102C57;
-            color: white;
-            text-align: center;
-            padding: 22px;
-            margin-top: 25px;
-        }
-
-        @media (max-width: 600px) {
-            .columnas {
-                flex-direction: column;
-            }
-
-            header h1 {
-                font-size: 25px;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="RUNCTY, planificación de rutas seguras para corredores en Loja, Ecuador.">
+ <title>Inicio | RUNCTY</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Montserrat:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
+<header class="site-header">
+    <div class="envoltura barra">
+      <a class="marca" href="index.html" aria-label="RUNCTY, ir al inicio"><span class="marca-imagen"><img src="img/logo_runcty.png" alt="" width="48" height="48"></span><span>RUNCTY<span class="marca-punto">.</span></span></a>
+      <nav class="navegacion" aria-label="Navegación principal"><a href="index.html" aria-current="page">Inicio</a><a href="proyecto.html">Proyecto</a><a href="requisitos.html">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a class="nav-figma" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Ver prototipo <span aria-hidden="true">↗</span></a></nav>
+      <details class="navegacion-movil"><summary>Menú <span aria-hidden="true">☰</span></summary><nav aria-label="Navegación móvil"><a href="index.html" aria-current="page">Inicio</a><a href="proyecto.html">Proyecto</a><a href="requisitos.html">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></nav></details>
+    </div>
+  </header>
 
-    <header>
-        <p class="etiqueta">UTPL | COMPUTACIÓN</p>
-
-        <h1>TALLER DE INGENIERÍA WEB</h1>
-
-        <h3 style="color: #FFD34D;">
-            Semana 2 - Git y GitHub
-        </h3>
-
-        <p>Control de versiones y trabajo colaborativo</p>
-    </header>
-
-    <main class="contenedor">
-
-        <h2>1. ¿Qué son Git y GitHub?</h2>
-
-        <div class="columnas">
-
-            <div class="tarjeta">
-                <h3>Git</h3>
-
-                <p>
-                    Git es una herramienta de control
-                    de versiones que permite registrar
-                    los cambios realizados en un proyecto.
-                </p>
-
-                <p>
-                    Podemos utilizar Git localmente
-                    sin necesidad de internet.
-                </p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>GitHub</h3>
-
-                <p>
-                    GitHub es una plataforma en la nube
-                    que permite almacenar repositorios
-                    de Git y compartir proyectos.
-                </p>
-
-                <p>
-                    Facilita el trabajo colaborativo
-                    entre varios desarrolladores.
-                </p>
-            </div>
-
-        </div>
-
-        <h2>2. Diferencias entre Git y GitHub</h2>
-
-        <div class="tarjeta">
-
-            <p>
-                <b>Git:</b> registra los cambios
-                y permite recuperar versiones anteriores.
-            </p>
-
-            <p>
-                <b>GitHub:</b> permite publicar
-                los repositorios y colaborar en equipo.
-            </p>
-
-            <div class="destacado">
-                <b>Ejemplo práctico:</b>
-
-                <p>
-                    Creamos una página HTML, registramos
-                    sus cambios con Git y luego la
-                    compartimos mediante GitHub.
-                </p>
-            </div>
-
-        </div>
-
-        <h2>3. Comandos básicos de Git</h2>
-
-        <div class="tarjeta tabla">
-
-            <table>
-                <tr>
-                    <th>Comando</th>
-                    <th>Función</th>
-                </tr>
-
-                <tr>
-                    <td><code>git --version</code></td>
-                    <td>Verifica la versión instalada.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git init</code></td>
-                    <td>Inicializa un repositorio local.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git status</code></td>
-                    <td>Muestra el estado de los archivos.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git add .</code></td>
-                    <td>Prepara los cambios para un commit.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git commit -m "Avance"</code></td>
-                    <td>Registra los cambios preparados.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git log</code></td>
-                    <td>Muestra el historial de commits.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git branch</code></td>
-                    <td>Muestra las ramas locales.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git clone URL</code></td>
-                    <td>Copia un repositorio existente.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git push</code></td>
-                    <td>Envía commits al repositorio remoto.</td>
-                </tr>
-
-                <tr>
-                    <td><code>git pull</code></td>
-                    <td>Obtiene e integra cambios remotos.</td>
-                </tr>
-            </table>
-
-        </div>
-
-        <h2>4. Conceptos importantes</h2>
-
-        <div class="tarjeta">
-
-            <p>
-                <b>Repositorio:</b> lugar donde se
-                almacenan los archivos de un proyecto
-                y su historial de versiones.
-            </p>
-
-            <p>
-                <b>Commit:</b> registro de los cambios
-                preparados en un momento determinado.
-            </p>
-
-            <p>
-                <b>Branch:</b> rama que permite
-                desarrollar cambios de forma separada.
-            </p>
-
-            <p>
-                <b>README.md:</b> documento que explica
-                el propósito y funcionamiento del proyecto.
-            </p>
-
-            <p>
-                <b>.gitignore:</b> archivo que indica
-                qué archivos no rastreados debe ignorar Git.
-            </p>
-
-        </div>
-
-        <h2>5. ¿Cómo subir un proyecto a GitHub?</h2>
-
-        <div class="tarjeta">
-
-            <ol>
-                <li>Crear una carpeta con nuestro proyecto.</li>
-                <li>Inicializar Git con <code>git init</code>.</li>
-                <li>Preparar archivos con <code>git add .</code>.</li>
-                <li>Registrar un commit con <code>git commit</code>.</li>
-                <li>Crear un repositorio en GitHub.</li>
-                <li>Conectar el repositorio local con GitHub.</li>
-                <li>Subir los cambios con <code>git push</code>.</li>
-            </ol>
-
-            <div class="destacado">
-                <b>Importante:</b>
-                Git nos ayuda a llevar el historial
-                del código, mientras que GitHub facilita
-                compartirlo y trabajar en grupo.
-            </div>
-
-        </div>
-
-        <h2>6. Integrantes del grupo</h2>
-
-        <div class="tarjeta integrantes">
-
-            <h3>Equipo de trabajo</h3>
-
-            <p>Joel Domínguez Ochoa</p>
-            <p>Marcelo Pico Benítez</p>
-            <p>Stalin Salinas Quinche</p>
-
-        </div>
-
-    </main>
-
-    <footer>
-        <p>Ingeniería Web | Semana 2</p>
-    </footer>
-
+<main>
+  <section class="hero">
+    <div class="hero-red hero-glow"></div><div class="hero-violet hero-glow"></div>
+    <div class="envoltura hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow hero-kicker"><span class="linea-acento"></span> TU CIUDAD. TU RITMO. TU SIGUIENTE META.</p>
+        <h1>ELIGE TU RUTA.<br><em>SUPERA TUS LÍMITES.</em></h1>
+        <p class="hero-desc">Descubre rutas y horarios con información de seguridad para correr por Loja con mayor confianza.</p>
+        <div class="acciones"><a class="btn btn-violeta" href="proyecto.html">Conoce RUNCTY <span aria-hidden="true">↗</span></a><a class="btn btn-transparente" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Explorar el prototipo <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-sub"><span>01 / PLANIFICA</span><span>02 / EXPLORA</span><span>03 / CORRE</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="anillo anillo-uno"></div><div class="anillo anillo-dos"></div>
+        <div class="logo-grande"><img src="img/logo_runcty.png" alt="Símbolo del corredor de RUNCTY" width="500" height="500"></div>
+        <div class="hero-etiqueta">RUNCTY <span> / </span> LOJA, ECUADOR <span class="punto-violeta"></span></div>
+        <div class="hero-detail">MUÉVETE CON<br><strong>PROPÓSITO.</strong></div>
+      </div>
+    </div>
+    <div class="envoltura hero-bottom"><span>RUNCTY / PROYECTO WEB Y MÓVIL</span><span>INGENIERÍA WEB · 2026</span></div>
+  </section>
+  <section class="manifiesto seccion"><div class="envoltura manifiesto-grid"><div><p class="eyebrow azul">LA IDEA DETRÁS DE RUNCTY</p><h2>Corre más lejos.<br><span class="resaltado-amarillo">Corre informado.</span></h2></div><div class="manifiesto-aside"><p>RUNCTY es un prototipo para corredores y para el Club Deportivo Gacelas Running Team. Ayuda a planificar entrenamientos con información de rutas, horarios y condiciones de seguridad.</p><a class="enlace-flecha" href="proyecto.html">Leer sobre el proyecto <span aria-hidden="true">↗</span></a></div></div></section>
+  <section class="seccion experiencias" id="experiencias"><div class="envoltura"><div class="intro-seccion"><div><p class="eyebrow violeta">UN MISMO PROYECTO. DOS EXPERIENCIAS.</p><h2>Una forma diferente<br>de vivir tus recorridos.</h2></div><p>Una propuesta para explorar rutas desde la web y acompañar cada entrenamiento desde el móvil.</p></div><div class="tarjetas-exp">
+    <article class="tarjeta-exp tarjeta-azul"><span class="indice">01 / EXPLORA</span><div class="simbolo-tarjeta" aria-hidden="true">↗</div><h3>Aplicación web</h3><p>Consulta rutas, revisa sus condiciones y conoce los espacios recomendados de la ciudad.</p><a href="proyecto.html#aplicacion-web">Conocer funciones <span aria-hidden="true">↗</span></a><div class="tarjeta-deco deco-amarillo"></div></article>
+    <article class="tarjeta-exp tarjeta-clara"><span class="indice">02 / ENTRENA</span><div class="simbolo-tarjeta simbolo-circular" aria-hidden="true">↗</div><h3>Aplicación móvil</h3><p>Planifica tus salidas y registra tus recorridos, distancias, tiempos y ritmo con GPS.</p><a href="proyecto.html#aplicacion-movil-para-android">Conocer funciones <span aria-hidden="true">↗</span></a><div class="tarjeta-deco deco-violeta"></div></article>
+  </div></div></section>
+  <section class="seccion compromiso"><div class="envoltura"><div class="intro-seccion"><div><p class="eyebrow azul">DISEÑADO PARA CORREDORES</p><h2>Lo importante es<br><span class="acento-violeta">cómo recorres</span> tu ciudad.</h2></div><p>Funciones contempladas en la propuesta de RUNCTY para mejorar la planificación y el acceso a información útil.</p></div><div class="ventajas-grid"><article class="ventaja"><span class="ventaja-num">01</span><h3>Rutas y horarios</h3><p>Explora recorridos y espacios recomendados según el horario de entrenamiento.</p></article><article class="ventaja"><span class="ventaja-num">02</span><h3>Información de seguridad</h3><p>Consulta un índice referencial y conoce las condiciones de los tramos.</p></article><article class="ventaja"><span class="ventaja-num">03</span><h3>Comunidad</h3><p>Comparte propuestas de recorridos e incidentes sujetos a revisión por el club.</p></article></div></div></section>
+  <section class="seccion documentos"><div class="envoltura"><div class="intro-seccion"><div><p class="eyebrow violeta">DOCUMENTACIÓN DEL PROYECTO</p><h2>De la idea<br>a los requisitos.</h2></div><p>Consulta las especificaciones del prototipo, organizadas para facilitar su revisión.</p></div><div class="documentos-grid"><a class="doc-tarjeta" href="requisitos-funcionales.html"><span class="doc-codigo">RF</span><span class="doc-num">23 requisitos</span><h3>Funcionales</h3><p>Qué debe permitir hacer el sistema.</p><span class="doc-arrow" aria-hidden="true">↗</span></a><a class="doc-tarjeta doc-tarjeta-yellow" href="requisitos-no-funcionales.html"><span class="doc-codigo">RNF</span><span class="doc-num">12 requisitos</span><h3>No funcionales</h3><p>Cómo debe funcionar el sistema.</p><span class="doc-arrow" aria-hidden="true">↗</span></a><a class="doc-tarjeta doc-tarjeta-soft" href="requisitos.html"><span class="doc-codigo">DOC</span><span class="doc-num">Documento íntegro</span><h3>Documentación</h3><p>Descripción, alcance, usuarios y requisitos originales.</p><span class="doc-arrow" aria-hidden="true">↗</span></a></div></div></section>
+  <section class="seccion stack-preview"><div class="envoltura stack-box"><div class="stack-copy"><p class="eyebrow">LAS HERRAMIENTAS DEL PROYECTO</p><h2>Diseñado con una<br><em>base tecnológica.</em></h2><p>Lenguajes, herramientas, mapas y servicios propuestos para desarrollar RUNCTY.</p><a class="btn btn-amarillo" href="tecnologias.html">Ver las 19 tecnologías <span aria-hidden="true">↗</span></a></div><div class="stack-logos"><div class="orb orb-a"><img src="img/React.png" alt="React"></div><div class="orb orb-b"><img src="img/TypeScript.png" alt="TypeScript"></div><div class="orb orb-c"><img src="img/figmalogo.png" alt="Figma"></div><div class="orb orb-d"><img src="img/PostgreSQL.png" alt="PostgreSQL"></div><div class="orb orb-e"><img src="img/MapLibre.png" alt="MapLibre"></div></div></div></section>
+  <section class="llamada"><div class="envoltura llamada-inner"><p class="eyebrow">PRIMER PROTOTIPO · FIGMA</p><h2>El siguiente paso<br><em>lo eliges tú.</em></h2><p>Explora la propuesta de RUNCTY para web y móvil desde su prototipo.</p><a class="btn btn-amarillo" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Abrir prototipo en Figma <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="pie"><div class="envoltura pie-grid"><div><a class="marca marca-pie" href="index.html"><span class="marca-imagen"><img src="img/logo_runcty.png" width="48" height="48" alt=""></span><span>RUNCTY<span class="marca-punto">.</span></span></a><p>Tu ciudad. Tu ritmo. Tu siguiente meta.</p></div><div class="pie-links"><a href="proyecto.html">El proyecto</a><a href="requisitos-funcionales.html">Requisitos funcionales</a><a href="requisitos-no-funcionales.html">Requisitos no funcionales</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></div></div><div class="envoltura pie-final"><span>Proyecto académico · Ingeniería Web · Computación</span><span>Loja, Ecuador · 2026</span></div></footer>
 </body>
 </html>

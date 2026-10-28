@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="RUNCTY, planificación de rutas seguras para corredores en Loja, Ecuador.">
+ <title>Requisitos funcionales | RUNCTY</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Montserrat:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="envoltura barra">
+      <a class="marca" href="index.html" aria-label="RUNCTY, ir al inicio"><span class="marca-imagen"><img src="img/logo_runcty.png" alt="" width="48" height="48"></span><span>RUNCTY<span class="marca-punto">.</span></span></a>
+      <nav class="navegacion" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="proyecto.html">Proyecto</a><a href="requisitos.html" aria-current="page">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a class="nav-figma" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Ver prototipo <span aria-hidden="true">↗</span></a></nav>
+      <details class="navegacion-movil"><summary>Menú <span aria-hidden="true">☰</span></summary><nav aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="proyecto.html">Proyecto</a><a href="requisitos.html" aria-current="page">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></nav></details>
+    </div>
+  </header>
+<main><section class="cabecera-pagina cabecera-oscura"><div class="envoltura"><p class="eyebrow">ESPECIFICACIÓN · RF</p><h1>Requisitos funcionales</h1><p class="cabecera-subtitulo">23 requisitos agrupados por sus funciones y criterios de comprobación.</p></div></section><section class="seccion"><div class="envoltura"><div class="accesos-req"><a href="requisitos.html">Consultar documento completo ↗</a><a href="requisitos-no-funcionales.html">Ver no funcionales ↗</a></div><article class="texto-documento texto-requisitos"><h2 id="requisitos-funcionales">Requisitos funcionales</h2>
+<h3 id="acceso-y-consulta-de-información">Acceso y consulta de información</h3>
+<div class="tabla-desplazable"><table border="1" cellpadding="6" cellspacing="0" class="tabla-requisitos" width="100%">
+<thead>
+<tr>
+<th>Código</th>
+<th>Función</th>
+<th>Criterio de comprobación</th>
+<th>Prioridad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF01</td>
+<td>Registrar cuentas. El sistema deberá crear una cuenta con rol de
+corredor cuando un visitante envíe datos de registro válidos.</td>
+<td>Con datos válidos y edad mínima de 15 años, se crea una cuenta
+pendiente de verificar. Un correo duplicado se rechaza.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF02</td>
+<td>Verificar el correo. El sistema deberá activar la cuenta del
+corredor cuando este utilice un enlace de verificación vigente enviado a
+su correo.</td>
+<td>Un enlace válido activa la cuenta; uno vencido o usado no permite
+activarla.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF03</td>
+<td>Iniciar sesión. El sistema deberá autenticar a un usuario registrado
+mediante su correo y contraseña, y habilitar las funciones de su
+rol.</td>
+<td>Un usuario activo con credenciales correctas accede a su rol; las
+credenciales incorrectas se rechazan.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF04</td>
+<td>Consultar el mapa. La aplicación web deberá mostrar un mapa
+interactivo de Loja con las rutas y los espacios disponibles para los
+corredores.</td>
+<td>El visitante puede desplazar y ampliar el mapa, y seleccionar una
+ruta o un espacio publicado.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF05</td>
+<td>Consultar el catálogo de rutas. La aplicación web deberá mostrar el
+catálogo público de rutas disponibles en Loja con su distancia y
+dificultad.</td>
+<td>Una persona sin cuenta puede consultar las rutas publicadas y
+distinguir su nombre, distancia y dificultad.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF06</td>
+<td>Consultar una ruta. El sistema deberá mostrar la ficha de una ruta
+seleccionada con su trazado, horario recomendado e índice referencial
+para la hora consultada.</td>
+<td>Al seleccionar una ruta y una hora, se muestran el recorrido y los
+datos correspondientes a esa consulta.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF07</td>
+<td>Consultar espacios recomendados. La aplicación web deberá mostrar
+los espacios recomendados por el Club Gacelas con su ubicación y
+horarios de uso sugeridos.</td>
+<td>Se pueden consultar al menos cinco espacios validados por el club,
+con sus horarios registrados.</td>
+<td>Debe tener</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="evaluación-y-planificación-de-rutas">Evaluación y planificación de rutas</h3>
+<div class="tabla-desplazable"><table border="1" cellpadding="6" cellspacing="0" class="tabla-requisitos" width="100%">
+<thead>
+<tr>
+<th>Código</th>
+<th>Función</th>
+<th>Criterio de comprobación</th>
+<th>Prioridad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF08</td>
+<td>Calcular el índice de seguridad. El sistema deberá calcular un
+índice referencial de 0 a 100 para cada tramo de ruta en función del
+horario y de los datos disponibles del entorno.</td>
+<td>Al consultar el mismo tramo en horarios distintos, el cálculo
+utiliza los parámetros correspondientes y muestra el resultado dentro de
+0 a 100.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF09</td>
+<td>Recomendar rutas. El sistema deberá recomendar rutas del catálogo de
+Loja según la distancia, el horario y el nivel de experiencia que
+indique el corredor.</td>
+<td>Con una consulta válida, se muestran hasta cinco opciones ordenadas
+por su índice referencial; si no existen coincidencias, se informa al
+usuario.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Planificar un trayecto. El sistema deberá calcular un recorrido
+entre un punto de partida y un destino dentro de Loja, priorizando los
+tramos mejor evaluados según la regla de cálculo aprobada.</td>
+<td>Con dos puntos válidos se obtiene un trazado y su distancia; el
+resultado no se presenta como garantía de seguridad.</td>
+<td>Debe tener</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="gestión-de-información-del-club-y-de-la-comunidad">Gestión de información del club y de la comunidad</h3>
+<div class="tabla-desplazable"><table border="1" cellpadding="6" cellspacing="0" class="tabla-requisitos" width="100%">
+<thead>
+<tr>
+<th>Código</th>
+<th>Función</th>
+<th>Criterio de comprobación</th>
+<th>Prioridad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF11</td>
+<td>Publicar rutas oficiales. La aplicación web deberá permitir que el
+administrador del club publique una ruta oficial de Loja con su trazado
+y horario recomendado.</td>
+<td>Una ruta validada y publicada por el administrador aparece
+identificada como oficial en el catálogo público.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF12</td>
+<td>Registrar espacios del club. La aplicación web deberá permitir que
+el administrador del club registre un espacio recomendado para correr
+con su ubicación y horario sugerido.</td>
+<td>Tras guardar datos válidos, el espacio aparece en la consulta
+pública con el horario correspondiente.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF13</td>
+<td>Registrar incidentes. El sistema deberá guardar como pendiente de
+revisión un reporte de incidente que envíe un corredor autenticado.</td>
+<td>Un reporte con tipo, ubicación y fecha queda registrado como
+pendiente y no se publica inmediatamente.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF14</td>
+<td>Moderar reportes. La aplicación web deberá permitir que el
+administrador del club resuelva la revisión de un reporte mediante su
+aprobación o rechazo.</td>
+<td>Un reporte aprobado aparece en el mapa; uno rechazado no aparece y
+conserva el motivo de la decisión.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF15</td>
+<td>Retirar reportes vencidos. El sistema deberá retirar de la
+información vigente los reportes de incidentes al cumplirse 30 días
+desde su creación.</td>
+<td>Un reporte que supera el plazo deja de mostrarse como vigente y no
+influye en el índice actualizado.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF16</td>
+<td>Registrar zonas de riesgo. La aplicación web deberá permitir que el
+administrador del club registre una zona de riesgo en Loja con su
+ubicación y fuente de información.</td>
+<td>La zona queda vinculada a la fuente registrada y se utiliza como
+dato de entrada para el índice cuando está vigente.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF17</td>
+<td>Publicar publicidad. La aplicación web deberá permitir que el
+administrador del club publique un banner de un patrocinador con fechas
+de vigencia.</td>
+<td>El banner se muestra identificado como «Publicidad» solo durante su
+vigencia y nunca en la pantalla de grabación.</td>
+<td>Debe tener</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="entrenamientos-y-seguridad-del-corredor">Entrenamientos y seguridad del corredor</h3>
+<div class="tabla-desplazable"><table border="1" cellpadding="6" cellspacing="0" class="tabla-requisitos" width="100%">
+<thead>
+<tr>
+<th>Código</th>
+<th>Función</th>
+<th>Criterio de comprobación</th>
+<th>Prioridad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF18</td>
+<td>Grabar entrenamientos. La aplicación Android deberá registrar el
+recorrido del corredor mediante GPS mientras un entrenamiento esté
+activo.</td>
+<td>Una prueba en Android registra puntos del recorrido y permite
+calcular distancia, tiempo y ritmo.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF19</td>
+<td>Consultar entrenamientos. El sistema deberá mostrar al corredor
+autenticado el historial de entrenamientos que haya guardado.</td>
+<td>El corredor puede abrir un entrenamiento propio y consultar su
+fecha, distancia, duración y recorrido; no ve registros ajenos.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF20</td>
+<td>Registrar contactos de confianza. El sistema deberá permitir que el
+corredor registre contactos de confianza para recibir avisos
+relacionados con su recorrido.</td>
+<td>Se pueden guardar hasta cinco contactos por corredor y no se acepta
+un sexto contacto.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF21</td>
+<td>Compartir ubicación en vivo. La aplicación Android deberá generar un
+enlace temporal para que un contacto autorizado consulte la última
+ubicación recibida durante un entrenamiento.</td>
+<td>Un contacto abre el enlace sin instalar la aplicación; el acceso
+deja de estar disponible al terminar el entrenamiento o al cumplirse
+cuatro horas.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF22</td>
+<td>Enviar alerta SOS. La aplicación Android deberá enviar por correo
+una alerta SOS con la última ubicación disponible a los contactos de
+confianza cuando el corredor confirme su activación.</td>
+<td>Tras mantener presionado SOS tres segundos, se ofrece una
+cancelación de cinco segundos; si no se cancela y hay conexión, se
+realiza el envío y se informa su resultado.</td>
+<td>Debe tener</td>
+</tr>
+<tr>
+<td>RF23</td>
+<td>Iniciar llamada de emergencia. La aplicación Android deberá ofrecer
+desde la pantalla de SOS una opción para abrir el marcador telefónico
+con el número 911.</td>
+<td>Al tocar «Llamar al 911» se abre el marcador del teléfono; no se
+afirma que exista conexión automática con ECU 911.</td>
+<td>Debe tener</td>
+</tr>
+</tbody>
+</table></div>
+</article><div class="volver"><a class="btn btn-borde" href="requisitos.html">Volver a la documentación <span aria-hidden="true">↗</span></a></div></div></section></main>
+<footer class="pie"><div class="envoltura pie-grid"><div><a class="marca marca-pie" href="index.html"><span class="marca-imagen"><img src="img/logo_runcty.png" width="48" height="48" alt=""></span><span>RUNCTY<span class="marca-punto">.</span></span></a><p>Tu ciudad. Tu ritmo. Tu siguiente meta.</p></div><div class="pie-links"><a href="proyecto.html">El proyecto</a><a href="requisitos-funcionales.html">Requisitos funcionales</a><a href="requisitos-no-funcionales.html">Requisitos no funcionales</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></div></div><div class="envoltura pie-final"><span>Proyecto académico · Ingeniería Web · Computación</span><span>Loja, Ecuador · 2026</span></div></footer>
+</body>
+</html>

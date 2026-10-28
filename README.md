@@ -1,29 +1,17 @@
+# RUNCTY · Ingeniería Web
 
-# Taller de Ingeniería Web
+Sitio estático de documentación y presentación del proyecto RUNCTY, desarrollado con HTML5 y CSS.
 
-## Semana 2 - Git y GitHub
+## Estructura
 
-**Asignatura:** Ingeniería Web
+- `index.html`: portada del proyecto.
+- `proyecto.html`: descripción, alcance y usuarios.
+- `requisitos.html`: documento completo original, sin eliminar apartados.
+- `requisitos-funcionales.html`: 23 requisitos funcionales.
+- `requisitos-no-funcionales.html`: 12 requisitos no funcionales.
+- `tecnologias.html`: las 19 tecnologías propuestas y sus imágenes.
+- `css/estilos.css`: hoja CSS externa compartida por todas las páginas.
+- `img/`: logos originales e imágenes del proyecto.
 
-## Descripción
+El prototipo de Figma es externo; los botones llevan al enlace proporcionado para el proyecto.
 
-Como práctica, creamos una página web sencilla
-utilizando HTML y algunos estilos básicos.
-
-## Objetivo
-
-Aprender los comandos básicos de Git, crear un
-repositorio y subir nuestro proyecto a GitHub.
-
-## Herramientas utilizadas
-
-- HTML
-- Visual Studio Code
-- Git
-- GitHub
-
-## Integrantes
-
-- Joel Domínguez Ochoa
-- Marcelo Pico Benítez
-- Stalin Salinas Quinche

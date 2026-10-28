@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="RUNCTY, planificación de rutas seguras para corredores en Loja, Ecuador.">
+ <title>Sobre el proyecto | RUNCTY</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Montserrat:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="envoltura barra">
+      <a class="marca" href="index.html" aria-label="RUNCTY, ir al inicio"><span class="marca-imagen"><img src="img/logo_runcty.png" alt="" width="48" height="48"></span><span>RUNCTY<span class="marca-punto">.</span></span></a>
+      <nav class="navegacion" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="proyecto.html" aria-current="page">Proyecto</a><a href="requisitos.html">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a class="nav-figma" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Ver prototipo <span aria-hidden="true">↗</span></a></nav>
+      <details class="navegacion-movil"><summary>Menú <span aria-hidden="true">☰</span></summary><nav aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="proyecto.html" aria-current="page">Proyecto</a><a href="requisitos.html">Requisitos</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></nav></details>
+    </div>
+  </header>
+<main><section class="cabecera-pagina cabecera-oscura"><div class="envoltura"><p class="eyebrow">EL PROYECTO · LOJA</p><h1>Moverte también es elegir.</h1><p class="cabecera-subtitulo">RUNCTY: rutas, horarios y condiciones de seguridad como parte de la planificación.</p></div></section><section class="seccion"><div class="envoltura editorial-bloque"><div class="editorial-logo"><div class="editorial-anillo"><img src="img/logo_runcty.png" alt="Logo de RUNCTY"></div><span>LOJA · ECUADOR</span></div><div><p class="eyebrow azul">UNA IDEA CON PROPÓSITO</p><h2>Más información.<br>Mejores decisiones.</h2><p>RUNCTY está planteado para corredores y para el Club Deportivo Gacelas Running Team, con una aplicación web, una aplicación Android y un servidor compartido.</p><a class="enlace-flecha" href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Explorar prototipo en Figma ↗</a></div></div></section><section class="seccion superficie-clara"><div class="envoltura"><article class="texto-documento texto-proyecto"><h2 id="descripcion-del-proyecto">Descripción del proyecto</h2>
+<p>RUNCTY es un prototipo dirigido a los corredores y al Club Deportivo
+Gacelas Running Team que coloca la seguridad de la ruta y del horario
+como el elemento central de la planificación del entrenamiento. Esta
+versión funciona en la ciudad de Loja y queda preparada para habilitar
+otras ciudades en el futuro.</p>
+<p>El sistema tiene tres partes que comparten un mismo servidor y una
+misma base de datos: una aplicación móvil para Android, con la que el
+corredor planifica y graba sus entrenamientos. Una aplicación web, que
+ofrece el planificador, un explorador público de rutas y espacios
+recomendados de Loja, el panel del club y la administración. Y un
+servidor con una API REST que calcula el índice de seguridad.</p>
+<p>El corredor indica la distancia, el horario y su nivel (por ejemplo:
+5 km, 05:30, principiante) y el sistema le recomienda las rutas
+establecidas de la ciudad ordenadas por su índice de seguridad, junto
+con los espacios recomendados disponibles a esa hora (por ejemplo, el
+circuito del estadio desde las 05:00 o los senderos desde las 06:00).
+Cada ruta muestra el nivel de sus tramos y los factores que lo
+determinan.</p>
+<p>Durante el entrenamiento, la aplicación graba el recorrido con GPS y
+calcula su distancia, tiempo y ritmo. El corredor puede guardarlo y
+proponerlo a la comunidad. Por seguridad, puede compartir su recorrido
+en vivo con sus contactos de confianza mediante un enlace que caduca y
+enviarles una alerta SOS. La comunidad aporta reportes de incidentes,
+que el club modera, y el club registra rutas, espacios, horarios
+recomendados, zonas de riesgo y los banners de sus patrocinadores. Las
+rutas personales y la ubicación del corredor son privadas por
+defecto.</p>
+<h2 id="alcance-inicial-del-proyecto">Alcance inicial del proyecto</h2>
+<p>El proyecto RUNCTY contempla el desarrollo de un prototipo funcional
+compuesto por una aplicación web y una aplicación móvil para Android,
+dirigido inicialmente a los corredores de la ciudad de Loja y al Club
+Deportivo Gacelas Running Team. Ambas aplicaciones compartirán
+información mediante un servidor y una base de datos, permitiendo
+planificar entrenamientos, consultar rutas y espacios recomendados según
+el horario, registrar actividades deportivas y acceder a funciones
+relacionadas con la seguridad del corredor.</p>
+<h3 id="funcionalidades-que-se-desarrollaran">Funcionalidades que se desarrollarán</h3>
+<h4 id="aplicacion-web">Aplicación web</h4>
+<ul>
+<li><p>Registro e inicio de sesión de usuarios, con permisos según su
+rol: corredor, administrador del club y administrador del
+sistema.</p></li>
+<li><p>Mapa interactivo de Loja para visualizar las rutas y los espacios
+recomendados por el club, junto con sus respectivos horarios.</p></li>
+<li><p>Catálogo de rutas con información sobre distancia, dificultad,
+duración estimada y condiciones de seguridad.</p></li>
+<li><p>Recomendación de rutas según la distancia, el horario y el nivel
+del corredor, incluyendo el cálculo de recorridos entre dos puntos que
+prioricen tramos con mejores condiciones de seguridad.</p></li>
+<li><p>Visualización de un índice de seguridad referencial de 0 a 100,
+considerando las características del entorno, los horarios y los
+reportes disponibles.</p></li>
+<li><p>Registro de incidentes relacionados con las condiciones de las
+rutas, sujetos a revisión y aprobación por parte del club.</p></li>
+<li><p>Panel administrativo para gestionar rutas oficiales, espacios
+recomendados, horarios, zonas de riesgo y reportes de la
+comunidad.</p></li>
+<li><p>Espacios publicitarios para patrocinadores, administrados por el
+club, con el propósito de contribuir al sostenimiento de la
+aplicación.</p></li>
+</ul>
+<h4 id="aplicacion-movil-para-android">Aplicación móvil para Android</h4>
+<ul>
+<li><p>Consulta del mapa interactivo, las rutas recomendadas y sus
+condiciones de seguridad según el horario seleccionado.</p></li>
+<li><p>Planificación de entrenamientos considerando la distancia, el
+horario y el nivel de experiencia del corredor.</p></li>
+<li><p>Registro de recorridos mediante GPS, con seguimiento de
+distancia, tiempo y ritmo.</p></li>
+<li><p>Almacenamiento de entrenamientos y consulta del historial de
+actividades realizadas.</p></li>
+<li><p>Continuidad de la grabación con la pantalla bloqueada y
+almacenamiento temporal de los datos cuando no exista conexión a
+internet.</p></li>
+<li><p>Posibilidad de proponer recorridos registrados como nuevas rutas
+para la comunidad, sujetos a la revisión del club.</p></li>
+<li><p>Registro de hasta cinco contactos de confianza para compartir la
+ubicación durante un entrenamiento mediante enlaces temporales.</p></li>
+<li><p>Activación de una alerta SOS que permita enviar la última
+ubicación del corredor a sus contactos de confianza por correo
+electrónico, con opción de cancelar la alerta antes de su envío,
+preparar un mensaje para compartir mediante WhatsApp y realizar una
+llamada telefónica al 911 desde el dispositivo.</p></li>
+</ul>
+<p>Ambas aplicaciones utilizarán la misma información sobre rutas,
+espacios recomendados, horarios y reportes de incidentes. El índice de
+seguridad tendrá carácter referencial y ayudará al corredor a tomar
+decisiones informadas, sin garantizar que los recorridos estén
+completamente libres de riesgos.</p>
+<h3 id="funcionalidades-sujetas-al-avance-del-proyecto">Funcionalidades sujetas al avance del proyecto</h3>
+<p>Si el tiempo y los recursos disponibles lo permiten, se podrán
+incorporar funcionalidades complementarias como valoraciones de rutas,
+estadísticas deportivas adicionales, identificación de puntos de apoyo
+cercanos, comparación de recorridos y organización de entrenamientos
+grupales.</p>
+<p>También se considera la posibilidad de habilitar un espacio
+informativo donde el Club Deportivo Gacelas Running Team pueda publicar
+avisos sobre entrenamientos, carreras, maratones y otras actividades
+deportivas. Esta funcionalidad deberá validarse previamente con el
+cliente.</p>
+<p>Estas mejoras se considerarán únicamente cuando las funcionalidades
+principales estén desarrolladas y no representen un riesgo para el
+cumplimiento de los objetivos del proyecto.</p>
+<h3 id="funcionalidades-fuera-del-alcance-inicial">Funcionalidades fuera del alcance inicial</h3>
+<p>Durante la primera versión de RUNCTY no se contempla:</p>
+<ul>
+<li><p>Desarrollar una aplicación nativa para iPhone (iOS).</p></li>
+<li><p>Publicar la aplicación en tiendas como Google Play o App
+Store.</p></li>
+<li><p>Incorporar rutas y espacios recomendados de ciudades distintas de
+Loja, aunque el sistema quedará preparado para futuras
+ampliaciones.</p></li>
+<li><p>Integrar automáticamente las alertas SOS con los sistemas del ECU
+911, la Policía Nacional u otras instituciones de emergencia.</p></li>
+<li><p>Implementar el envío de mensajes SMS pagados.</p></li>
+<li><p>Incorporar sistemas de pagos o cobros dentro de la
+aplicación.</p></li>
+<li><p>Integrar relojes inteligentes, dispositivos deportivos o
+plataformas externas como Strava y Garmin.</p></li>
+<li><p>Desarrollar funcionalidades avanzadas de inteligencia artificial,
+rankings, retos o recompensas deportivas.</p></li>
+<li><p>Implementar la generación automática de rutas circulares o
+recorridos de ida y vuelta.</p></li>
+</ul>
+<p>La primera versión de RUNCTY estará enfocada en proporcionar una
+solución funcional que permita al Club Deportivo Gacelas Running Team
+evaluar la planificación de rutas, el seguimiento deportivo y las
+herramientas de apoyo a la seguridad de los corredores. El prototipo
+será validado mediante pruebas con integrantes del club y, de acuerdo
+con los resultados obtenidos, podrá considerarse su ampliación a otras
+ciudades del Ecuador mediante futuras alianzas con organizaciones
+deportivas.</p>
+<h2 id="identificacion-de-usuarios">Identificación de usuarios</h2>
+<div class="tabla-desplazable"><table border="1" cellpadding="6" cellspacing="0" class="tabla-requisitos" width="100%">
+<thead>
+<tr>
+<th>Tipo de Usuario / Rol</th>
+<th>Categoría de Usuario</th>
+<th>Descripción / Perfil</th>
+<th>Principales Responsabilidades y Acciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Corredor</strong></td>
+<td>Usuario Final</td>
+<td>Deportistas de niveles principiante, intermedio y avanzado, así como
+personas que entrenan en franjas horarias de madrugada o noche en
+ciudades del Ecuador.</td>
+<td><ul><li>Registrar entrenamientos midiendo distancia, tiempo, ritmo y velocidad</li><li>Consultar y seleccionar rutas seguras por ciudad, distancia y horario</li><li>Consultar el mapa y la ubicación de puntos de apoyo (policía, farmacias, gasolineras)</li><li>Calificar rutas y enviar reportes sobre incidentes o condiciones del entorno.</li><li>Compartir ubicación en tiempo real con contactos de confianza y emitir alertas de emergencia (SOS)</li></ul></td>
+</tr>
+<tr>
+<td><strong>Administrador del Club</strong></td>
+<td>Usuario Gestor</td>
+<td>Líderes de clubes de running, representantes de grupos deportivos u
+organizadores de entrenamientos comunitarios.</td>
+<td><ul><li>Crear, sugerir y publicar rutas recomendadas oficialmente por el club</li><li>Organizar y gestionar salidas o entrenamientos grupales para los miembros del club</li><li>Moderar los reportes, comentarios y sugerencias aportados por la comunidad para evitar información falsa.</li></ul></td>
+</tr>
+<tr>
+<td><strong>Administrador del Sistema</strong></td>
+<td>Usuario Técnico</td>
+<td>Personal técnico encargado de la gestión global, administración y
+mantenimiento de la plataforma RUNCTY.</td>
+<td><ul><li>Gestionar cuentas de usuario y controlar el acceso a la plataforma.</li><li>Asignar, modificar o retirar roles a los usuarios (como habilitar Administradores de Club).</li><li>Configurar parámetros globales, ciudades disponibles y calibrar las variables del índice de seguridad de las rutas.</li></ul></td>
+</tr>
+<tr>
+<td><strong>Contacto de Confianza</strong></td>
+<td>Actor Externo (Sin Cuenta)</td>
+<td>Familiares o amigos registrados previamente por el corredor para
+recibir soporte en caso de emergencia</td>
+<td><ul><li>Recibir el enlace temporal por correo o WhatsApp para visualizar el recorrido del corredor en tiempo real.</li><li>Recibir la notificación de alerta SOS en caso de emergencia con la última ubicación del corredor</li></ul></td>
+</tr>
+<tr>
+<td><strong>Visitante</strong></td>
+<td>Actor Externo (Sin Cuenta)</td>
+<td>Cualquier persona que accede a la web pública de RUNCTY sin iniciar
+sesión.</td>
+<td><ul><li>Consultar de forma pública el catálogo de rutas oficiales y los espacios recomendados de la ciudad de Loja</li></ul></td>
+</tr>
+</tbody>
+</table></div>
+</article></div></section></main>
+<footer class="pie"><div class="envoltura pie-grid"><div><a class="marca marca-pie" href="index.html"><span class="marca-imagen"><img src="img/logo_runcty.png" width="48" height="48" alt=""></span><span>RUNCTY<span class="marca-punto">.</span></span></a><p>Tu ciudad. Tu ritmo. Tu siguiente meta.</p></div><div class="pie-links"><a href="proyecto.html">El proyecto</a><a href="requisitos-funcionales.html">Requisitos funcionales</a><a href="requisitos-no-funcionales.html">Requisitos no funcionales</a><a href="tecnologias.html">Tecnologías</a><a href="https://www.figma.com/make/gIfoqALJYSt6hu2ZyHCxu8/Prototipo-RUNCTY-Web-y-M%C3%B3vil?t=76EYvWF3TbzVXDP3-1" target="_blank" rel="noopener noreferrer">Prototipo en Figma ↗</a></div></div><div class="envoltura pie-final"><span>Proyecto académico · Ingeniería Web · Computación</span><span>Loja, Ecuador · 2026</span></div></footer>
+</body>
+</html>
